@@ -1,0 +1,63 @@
+---
+title: "DATA EXTRACTION & QA-QC FOR PROF DR AK SAHOO"
+author: "Ankit Anand"
+date: "2026-01-05"
+output: html_document
+---
+
+This R Markdown file is designed to prepare, clean, and quality-check a multi-country panel dataset for empirical economic analysis, particularly for foreign aid, development indicators, and DEA/econometric applications.
+
+-\> The entire workflow follows three broad objectives:
+
+1.) Create a consistent panel dataset (Country × Year × Indicators)
+
+2.) Identify missing, weak, or unreliable data
+
+3.) Help decide which countries, indicators, and years form a balanced dataset.
+
+No advanced R knowledge is required to understand the logic — each step reflects a data question rather than a programming task.
+
+```{r}
+
+```
+
+🧱 Step-by-Step Logic of the File
+1. Loading Required Tools
+
+The file first loads a few standard R libraries.
+These libraries allow us to:
+
+A)Read Excel files
+B)Reshape data from wide to long format
+C) Summarise missing values
+D) Create tables and charts
+E) Export clean datasets back to Excel
+
+This ensures the analysis is reproducible and transparent.
+```{r, echo = FALSE,message=FALSE, warning=FALSE}
+############################################
+# 1. Load Required Libraries
+############################################
+
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(writexl)
+
+```
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
